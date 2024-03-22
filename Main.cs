@@ -12,6 +12,11 @@ namespace Exam_unit_three
             Test.areaOfCircleTest();
             Test.greetingsWithNamesTest(); 
             Test.flattenNumbersTest();
+            Test.sumOfNodesTest();
+            Test.deepestLevelTest();
+            Test.countNodesTest();
+            
+
         }
     }
 }
