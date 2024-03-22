@@ -38,5 +38,11 @@ public static class Test
         Console.WriteLine(result == "Hello, John" ? "GreetingsWithNamesTest passed" : "GreetingsWithNamesTest failed");
     }
 
+    public static void flattenNumbersTest()
+    {
+        Task2.readjson();
+        Console.WriteLine("FlattenNumbersTest passed");
+    }
+
 
 }

@@ -10,8 +10,8 @@ namespace Exam_unit_three
             Test.squareRootOfNumberTest();
             Test.cubeOfNumberTest();
             Test.areaOfCircleTest();
-            Test.greetingsWithNamesTest();
-            
+            Test.greetingsWithNamesTest(); 
+            Test.flattenNumbersTest();
         }
     }
 }
