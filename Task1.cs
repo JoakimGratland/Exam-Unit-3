@@ -60,7 +60,7 @@ public class greetingsWithNames
 {
     public static string greetWithName(string name)
     {
-        return $"Hello, {name}";
+        return $"{Text.Hello}, {name}";
     }
 }
 

@@ -3,10 +3,9 @@ public class Task3
 {
 
 
-    public static string comma = ", ";
     public static void readjson()
     {
-    string json = File.ReadAllText("nodes.json");
+    string json = File.ReadAllText(Text.nodesJson);
     Node mainNode = JsonSerializer.Deserialize<Node>(json);
     }
 
@@ -45,7 +44,7 @@ public class Task3
 
     public static int resultOfSumOfNodes()
     {
-        string json = File.ReadAllText("nodes.json");
+        string json = File.ReadAllText(Text.nodesJson);
         Node mainNode = JsonSerializer.Deserialize<Node>(json);
         int sum = sumOfNodes(mainNode);
         return sum;
@@ -53,7 +52,7 @@ public class Task3
 
     public static int resultOfDeepestLevel()
     {
-        string json = File.ReadAllText("nodes.json");
+        string json = File.ReadAllText(Text.nodesJson);
         Node mainNode = JsonSerializer.Deserialize<Node>(json);
         int deepestLevel = theDeepestLevel(mainNode);
         return deepestLevel;
@@ -61,7 +60,7 @@ public class Task3
 
     public static int resultOfCountNodes()
     {
-        string json = File.ReadAllText("nodes.json");
+        string json = File.ReadAllText(Text.nodesJson);
         Node mainNode = JsonSerializer.Deserialize<Node>(json);
         int count = countNodes(mainNode);
         return count;

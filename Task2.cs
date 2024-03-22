@@ -6,14 +6,13 @@ using System.Text.Json;
 public class Task2
 {
 
-            public static string comma = ", ";
             public static string readjson()
             {
-            string json = File.ReadAllText("arrays.json");
+            string json = File.ReadAllText(Text.arraysJson);
             List<object> data = JsonSerializer.Deserialize<List<object>>(json);
             List<int> numbers = new List<int>();
             flattenNumbers(data, numbers);
-            string numbersString = string.Join(comma, numbers);
+            string numbersString = string.Join(Text.comma, numbers);
             return numbersString;
             }
 
@@ -36,7 +35,7 @@ public class Task2
                 
                 }
             
-            }      
+            }
         
     
 }
